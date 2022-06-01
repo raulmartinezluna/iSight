@@ -17,9 +17,8 @@ class ContentViewModel: ObservableObject {
   
   private let context = CIContext()
   
-  private var prescriptionList:[Float] = [-3.25, -2.25, 1.25, -0.5, 0.5]
-  private var focusList:[Float] = [0.47, 0.54, 0.80, 0.66, 0.73]
-  
+  private var prescriptionList:[Float] = [-3.25, -2.25, 1.25, -0.5, 0.5, -6.5, -5.5]
+  private var focusList:[Float] = [0.47, 0.54, 0.80, 0.66, 0.73, 0.34, 0.42]
   private var model:PredictionModel! = nil
 
   private let cameraManager = CameraManager.shared
@@ -32,6 +31,8 @@ class ContentViewModel: ObservableObject {
   
   func createModel() {
     self.model = PredictionModel(prescriptionArray: self.prescriptionList, focusArray: self.focusList)
+    print("Intercept: "+String(self.model.intercept))
+    print("Slope: "+String(self.model.slope))
   }
 
   func setupSubscriptions() {
