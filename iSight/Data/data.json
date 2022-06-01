@@ -1,0 +1,22 @@
+[
+  {
+    "prescription": -3.25,
+    "focus": 0.47
+  }
+  {
+      "prescription": -2.25,
+      "focus": 0.54
+  }
+  {
+      "prescription": 1.25,
+      "focus": 0.8
+  }
+  {
+      "prescription": -0.5,
+      "focus": 0.66
+  }
+  {
+      "prescription": 0.5,
+      "focus": 0.73
+  }
+]
