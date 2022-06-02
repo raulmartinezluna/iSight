@@ -12,8 +12,8 @@ struct SliderView: View {
     @State private var isEditing = false
     
     var label: String = "Prescription"
-    var minVal: Float = -9
-    var maxVal: Float = 4
+    var minVal: Float = -10
+    var maxVal: Float = 5
     var increments: Float = 0.25
     
     var body: some View {
